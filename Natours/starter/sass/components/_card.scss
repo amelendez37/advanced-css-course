@@ -160,7 +160,9 @@
     }
 }
 
-@include respond(tab-port) {
+// @include respond(tab-port) {
+@media only screen and (max-width: 56.25em), // applies if device cannot hover, or width less than specified
+       only screen and (hover: none) {
     .card {
         height: auto;
         border-radius: 3px;
